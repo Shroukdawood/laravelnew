@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controller\ProductController;
+use App\Http\Controllers\Admin\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,3 +23,4 @@ Route::get('/product', function () {
 });
 
 Route::get('/product',[ProductController::class,'index']);
+Route::get('/product/create',[ProductController::class,'create']);

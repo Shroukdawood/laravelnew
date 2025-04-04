@@ -12,7 +12,7 @@ class ProductController extends Controller
     }
 
     public function create(){
-        return view('product.create');
+        return view('products.create');
        
     }
     public function store(Request $request){
@@ -29,7 +29,7 @@ class ProductController extends Controller
 
     }
     public function destroy(string $id){
-        
+
     }
 
 
